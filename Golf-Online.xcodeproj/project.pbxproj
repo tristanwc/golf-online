@@ -17,7 +17,6 @@
 		EE5B71742939E749001CB005 /* brush script mt kursiv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE5B71712939E749001CB005 /* brush script mt kursiv.ttf */; };
 		EE5B71752939E749001CB005 /* brush-script-mt.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5B71722939E749001CB005 /* brush-script-mt.png */; };
 		EE5B71792939EB07001CB005 /* GlowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B71782939EB07001CB005 /* GlowBorder.swift */; };
-		EE5B717B2939ED98001CB005 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B717A2939ED98001CB005 /* BottomSheet.swift */; };
 		EE5B717E2939FCCE001CB005 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE5B717D2939FCCE001CB005 /* FirebaseAuth */; };
 		EE5B71802939FCCE001CB005 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EE5B717F2939FCCE001CB005 /* FirebaseFirestore */; };
 		EE5B71822939FD7B001CB005 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5B71812939FD7B001CB005 /* GoogleService-Info.plist */; };
@@ -59,7 +58,6 @@
 		EE5B71722939E749001CB005 /* brush-script-mt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brush-script-mt.png"; sourceTree = "<group>"; };
 		EE5B71762939E7AA001CB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EE5B71782939EB07001CB005 /* GlowBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBorder.swift; sourceTree = "<group>"; };
-		EE5B717A2939ED98001CB005 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		EE5B71812939FD7B001CB005 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE5B7183293A0467001CB005 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		EE5B7185293A04AD001CB005 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			children = (
 				EE5B71332939D9DF001CB005 /* Golf_OnlineApp.swift */,
 				EE5B71352939D9DF001CB005 /* ContentView.swift */,
-				EE5B717A2939ED98001CB005 /* BottomSheet.swift */,
 				EE5B7183293A0467001CB005 /* ListView.swift */,
 				EE5B7185293A04AD001CB005 /* User.swift */,
 				EE5B7189293A0EDB001CB005 /* NewUserView.swift */,
@@ -314,7 +311,6 @@
 				EE5B7186293A04AD001CB005 /* User.swift in Sources */,
 				EE5B7188293A06E1001CB005 /* DataManager.swift in Sources */,
 				EE5B7184293A0467001CB005 /* ListView.swift in Sources */,
-				EE5B717B2939ED98001CB005 /* BottomSheet.swift in Sources */,
 				EE5B71342939D9DF001CB005 /* Golf_OnlineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

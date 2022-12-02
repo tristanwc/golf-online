@@ -1,10 +1,3 @@
-//
-//  User.swift
-//  Golf-Online
-//
-//  Created by tristan.cortez on 12/2/22.
-//
-
 import SwiftUI
 
 struct User: Identifiable {
