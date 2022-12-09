@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE071CF4294315D2007FD255 /* ScorecardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE071CF3294315D2007FD255 /* ScorecardView.swift */; };
+		EE071CF6294315EF007FD255 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE071CF5294315EF007FD255 /* Score.swift */; };
+		EE071CF829431D9E007FD255 /* PlayerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE071CF729431D9E007FD255 /* PlayerCellView.swift */; };
 		EE0AE8892942CE6900261281 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE8882942CE6900261281 /* Leaderboard.swift */; };
 		EE0AE88B2942D08600261281 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE88A2942D08600261281 /* TourView.swift */; };
 		EE0AE88D2942D16400261281 /* LeaderboardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE88C2942D16400261281 /* LeaderboardResult.swift */; };
@@ -49,7 +52,6 @@
 		EE998342293EAAD100F47783 /* NewCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998341293EAAD100F47783 /* NewCardForm.swift */; };
 		EE998345293EAB4200F47783 /* CardView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998344293EAB4200F47783 /* CardView.Model.swift */; };
 		EE998347293EABA000F47783 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998346293EABA000F47783 /* CardView.swift */; };
-		EEF1B0B42942F3E30091F7E6 /* CountryFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE071CF3294315D2007FD255 /* ScorecardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardView.swift; sourceTree = "<group>"; };
+		EE071CF5294315EF007FD255 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		EE071CF729431D9E007FD255 /* PlayerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellView.swift; sourceTree = "<group>"; };
 		EE0AE8882942CE6900261281 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		EE0AE88A2942D08600261281 /* TourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
 		EE0AE88C2942D16400261281 /* LeaderboardResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardResult.swift; sourceTree = "<group>"; };
@@ -110,7 +115,6 @@
 		EE998341293EAAD100F47783 /* NewCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardForm.swift; sourceTree = "<group>"; };
 		EE998344293EAB4200F47783 /* CardView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.Model.swift; sourceTree = "<group>"; };
 		EE998346293EABA000F47783 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFlagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,9 +267,10 @@
 				EE8B09B8293F49560085F1CB /* FavoriteView.swift */,
 				EE0AE88A2942D08600261281 /* TourView.swift */,
 				EE8B09B4293F48A20085F1CB /* ContentView.swift */,
+				EE071CF729431D9E007FD255 /* PlayerCellView.swift */,
+				EE071CF3294315D2007FD255 /* ScorecardView.swift */,
 				EE8B09B1293EB0780085F1CB /* Card */,
 				EE998343293EAB0F00F47783 /* ViewModels */,
-				EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				EE8B09EC2942C4450085F1CB /* TourRanking */,
 				EE8B09EB2942C43B0085F1CB /* WorldRanking */,
 				EE99833B293EA8E100F47783 /* Card.swift */,
+				EE071CF5294315EF007FD255 /* Score.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -471,19 +477,21 @@
 				EE998347293EABA000F47783 /* CardView.swift in Sources */,
 				EE0AE8892942CE6900261281 /* Leaderboard.swift in Sources */,
 				EE0AE88F2942D27600261281 /* LeaderboardTournament.swift in Sources */,
+				EE071CF6294315EF007FD255 /* Score.swift in Sources */,
 				EE8B09CE294286C40085F1CB /* GolfDataService.swift in Sources */,
 				EE8B09D229428C5E0085F1CB /* WorldRanking.swift in Sources */,
 				EE998340293EAAAB00F47783 /* CardListView.swift in Sources */,
 				EE8B09E62942BE200085F1CB /* Player.swift in Sources */,
 				EE8B09B7293F490C0085F1CB /* HomeView.swift in Sources */,
-				EEF1B0B42942F3E30091F7E6 /* CountryFlagView.swift in Sources */,
 				EE0AE88D2942D16400261281 /* LeaderboardResult.swift in Sources */,
+				EE071CF4294315D2007FD255 /* ScorecardView.swift in Sources */,
 				EE8B09B5293F48A20085F1CB /* ContentView.swift in Sources */,
 				EE99833C293EA8E100F47783 /* Card.swift in Sources */,
 				EE8B09DE2942B93B0085F1CB /* WorldRankingView.swift in Sources */,
 				EE8B09E02942BB2D0085F1CB /* ServiceHelper.swift in Sources */,
 				EE8B09E42942BDB40085F1CB /* WorldRankingResult.swift in Sources */,
 				EE8B09B3293F23540085F1CB /* AuthenticationService.swift in Sources */,
+				EE071CF829431D9E007FD255 /* PlayerCellView.swift in Sources */,
 				EE99833E293EAA1200F47783 /* CardListView.Model.swift in Sources */,
 				EE99833A293EA7DF00F47783 /* CardRepository.swift in Sources */,
 				EE5B71792939EB07001CB005 /* GlowBorder.swift in Sources */,

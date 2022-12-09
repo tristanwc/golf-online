@@ -11,7 +11,6 @@ struct ContentView: View {
     var body: some View {
         TabView {
             HomeView()
-                .badge(4)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -22,14 +21,13 @@ struct ContentView: View {
                     Text("World Ranking")
                 }
             FavoriteView()
-                .badge(10)
                 .tabItem {
                     Image(systemName: "heart.fill")
                     Text("Favorites")
                 }
             CardListView()
                 .tabItem {
-                    Image(systemName: "menu.fill")
+                    Image(systemName: "menucard.fill")
                     Text("Cards")
                 }
         }
