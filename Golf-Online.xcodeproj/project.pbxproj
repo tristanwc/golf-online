@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0AE8892942CE6900261281 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE8882942CE6900261281 /* Leaderboard.swift */; };
+		EE0AE88B2942D08600261281 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE88A2942D08600261281 /* TourView.swift */; };
+		EE0AE88D2942D16400261281 /* LeaderboardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE88C2942D16400261281 /* LeaderboardResult.swift */; };
+		EE0AE88F2942D27600261281 /* LeaderboardTournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE88E2942D27600261281 /* LeaderboardTournament.swift */; };
+		EE0AE8912942D31C00261281 /* LeaderboardPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AE8902942D31C00261281 /* LeaderboardPlayer.swift */; };
 		EE5B71342939D9DF001CB005 /* Golf_OnlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B71332939D9DF001CB005 /* Golf_OnlineApp.swift */; };
 		EE5B71362939D9DF001CB005 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B71352939D9DF001CB005 /* SignInView.swift */; };
 		EE5B71382939D9E0001CB005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5B71372939D9E0001CB005 /* Assets.xcassets */; };
@@ -24,7 +29,19 @@
 		EE8B09B3293F23540085F1CB /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09B2293F23540085F1CB /* AuthenticationService.swift */; };
 		EE8B09B5293F48A20085F1CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09B4293F48A20085F1CB /* ContentView.swift */; };
 		EE8B09B7293F490C0085F1CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09B6293F490C0085F1CB /* HomeView.swift */; };
-		EE8B09B9293F49560085F1CB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09B8293F49560085F1CB /* MessageView.swift */; };
+		EE8B09B9293F49560085F1CB /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09B8293F49560085F1CB /* FavoriteView.swift */; };
+		EE8B09BE2941B69D0085F1CB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = EE8B09BD2941B69D0085F1CB /* SwiftSoup */; };
+		EE8B09C5294271350085F1CB /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE8B09C4294271350085F1CB /* CryptoSwift */; };
+		EE8B09C8294272E40085F1CB /* AWSSigner in Frameworks */ = {isa = PBXBuildFile; productRef = EE8B09C7294272E40085F1CB /* AWSSigner */; };
+		EE8B09CE294286C40085F1CB /* GolfDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09CD294286C40085F1CB /* GolfDataService.swift */; };
+		EE8B09D229428C5E0085F1CB /* WorldRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09D129428C5E0085F1CB /* WorldRanking.swift */; };
+		EE8B09D8294294F30085F1CB /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8B09D7294294F30085F1CB /* data.json */; };
+		EE8B09DA2942AC730085F1CB /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09D92942AC730085F1CB /* Tour.swift */; };
+		EE8B09DE2942B93B0085F1CB /* WorldRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09DD2942B93B0085F1CB /* WorldRankingView.swift */; };
+		EE8B09E02942BB2D0085F1CB /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09DF2942BB2D0085F1CB /* ServiceHelper.swift */; };
+		EE8B09E42942BDB40085F1CB /* WorldRankingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09E32942BDB40085F1CB /* WorldRankingResult.swift */; };
+		EE8B09E62942BE200085F1CB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09E52942BE200085F1CB /* Player.swift */; };
+		EE8B09E82942C41D0085F1CB /* TourRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B09E72942C41D0085F1CB /* TourRanking.swift */; };
 		EE99833A293EA7DF00F47783 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998339293EA7DF00F47783 /* CardRepository.swift */; };
 		EE99833C293EA8E100F47783 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833B293EA8E100F47783 /* Card.swift */; };
 		EE99833E293EAA1200F47783 /* CardListView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833D293EAA1200F47783 /* CardListView.Model.swift */; };
@@ -32,6 +49,7 @@
 		EE998342293EAAD100F47783 /* NewCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998341293EAAD100F47783 /* NewCardForm.swift */; };
 		EE998345293EAB4200F47783 /* CardView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998344293EAB4200F47783 /* CardView.Model.swift */; };
 		EE998347293EABA000F47783 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998346293EABA000F47783 /* CardView.swift */; };
+		EEF1B0B42942F3E30091F7E6 /* CountryFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0AE8882942CE6900261281 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		EE0AE88A2942D08600261281 /* TourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
+		EE0AE88C2942D16400261281 /* LeaderboardResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardResult.swift; sourceTree = "<group>"; };
+		EE0AE88E2942D27600261281 /* LeaderboardTournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTournament.swift; sourceTree = "<group>"; };
+		EE0AE8902942D31C00261281 /* LeaderboardPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardPlayer.swift; sourceTree = "<group>"; };
 		EE5B71302939D9DF001CB005 /* Golf-Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf-Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5B71332939D9DF001CB005 /* Golf_OnlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_OnlineApp.swift; sourceTree = "<group>"; };
 		EE5B71352939D9DF001CB005 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -70,7 +93,16 @@
 		EE8B09B2293F23540085F1CB /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		EE8B09B4293F48A20085F1CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE8B09B6293F490C0085F1CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		EE8B09B8293F49560085F1CB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		EE8B09B8293F49560085F1CB /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		EE8B09CD294286C40085F1CB /* GolfDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDataService.swift; sourceTree = "<group>"; };
+		EE8B09D129428C5E0085F1CB /* WorldRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRanking.swift; sourceTree = "<group>"; };
+		EE8B09D7294294F30085F1CB /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EE8B09D92942AC730085F1CB /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		EE8B09DD2942B93B0085F1CB /* WorldRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRankingView.swift; sourceTree = "<group>"; };
+		EE8B09DF2942BB2D0085F1CB /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		EE8B09E32942BDB40085F1CB /* WorldRankingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRankingResult.swift; sourceTree = "<group>"; };
+		EE8B09E52942BE200085F1CB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EE8B09E72942C41D0085F1CB /* TourRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourRanking.swift; sourceTree = "<group>"; };
 		EE998339293EA7DF00F47783 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		EE99833B293EA8E100F47783 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EE99833D293EAA1200F47783 /* CardListView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.Model.swift; sourceTree = "<group>"; };
@@ -78,6 +110,7 @@
 		EE998341293EAAD100F47783 /* NewCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardForm.swift; sourceTree = "<group>"; };
 		EE998344293EAB4200F47783 /* CardView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.Model.swift; sourceTree = "<group>"; };
 		EE998346293EABA000F47783 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFlagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +118,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8B09C8294272E40085F1CB /* AWSSigner in Frameworks */,
 				EE5B717E2939FCCE001CB005 /* FirebaseAuth in Frameworks */,
+				EE8B09BE2941B69D0085F1CB /* SwiftSoup in Frameworks */,
 				EE5B71802939FCCE001CB005 /* FirebaseFirestore in Frameworks */,
+				EE8B09C5294271350085F1CB /* CryptoSwift in Frameworks */,
 				EE8B09B0293EAEDC0085F1CB /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +177,7 @@
 				EE5B71762939E7AA001CB005 /* Info.plist */,
 				EE5B71812939FD7B001CB005 /* GoogleService-Info.plist */,
 				EE5B71372939D9E0001CB005 /* Assets.xcassets */,
+				EE8B09D7294294F30085F1CB /* data.json */,
 				EE5B715F2939E538001CB005 /* Font */,
 				EE5B71392939D9E0001CB005 /* Preview Content */,
 			);
@@ -198,15 +235,37 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		EE8B09EB2942C43B0085F1CB /* WorldRanking */ = {
+			isa = PBXGroup;
+			children = (
+				EE8B09D129428C5E0085F1CB /* WorldRanking.swift */,
+				EE8B09E32942BDB40085F1CB /* WorldRankingResult.swift */,
+				EE8B09E52942BE200085F1CB /* Player.swift */,
+			);
+			path = WorldRanking;
+			sourceTree = "<group>";
+		};
+		EE8B09EC2942C4450085F1CB /* TourRanking */ = {
+			isa = PBXGroup;
+			children = (
+				EE8B09E72942C41D0085F1CB /* TourRanking.swift */,
+				EE8B09D92942AC730085F1CB /* Tour.swift */,
+			);
+			path = TourRanking;
+			sourceTree = "<group>";
+		};
 		EE998335293EA77C00F47783 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EE5B71352939D9DF001CB005 /* SignInView.swift */,
 				EE8B09B6293F490C0085F1CB /* HomeView.swift */,
-				EE8B09B8293F49560085F1CB /* MessageView.swift */,
+				EE8B09DD2942B93B0085F1CB /* WorldRankingView.swift */,
+				EE8B09B8293F49560085F1CB /* FavoriteView.swift */,
+				EE0AE88A2942D08600261281 /* TourView.swift */,
 				EE8B09B4293F48A20085F1CB /* ContentView.swift */,
 				EE8B09B1293EB0780085F1CB /* Card */,
 				EE998343293EAB0F00F47783 /* ViewModels */,
+				EEF1B0B32942F3E30091F7E6 /* CountryFlagView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +273,9 @@
 		EE998336293EA78300F47783 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEF1B0B22942E90F0091F7E6 /* Leaderboard */,
+				EE8B09EC2942C4450085F1CB /* TourRanking */,
+				EE8B09EB2942C43B0085F1CB /* WorldRanking */,
 				EE99833B293EA8E100F47783 /* Card.swift */,
 			);
 			path = Models;
@@ -223,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				EE8B09B2293F23540085F1CB /* AuthenticationService.swift */,
+				EE8B09CD294286C40085F1CB /* GolfDataService.swift */,
+				EE8B09DF2942BB2D0085F1CB /* ServiceHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,6 +306,17 @@
 				EE998344293EAB4200F47783 /* CardView.Model.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EEF1B0B22942E90F0091F7E6 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				EE0AE8882942CE6900261281 /* Leaderboard.swift */,
+				EE0AE88C2942D16400261281 /* LeaderboardResult.swift */,
+				EE0AE88E2942D27600261281 /* LeaderboardTournament.swift */,
+				EE0AE8902942D31C00261281 /* LeaderboardPlayer.swift */,
+			);
+			path = Leaderboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +339,9 @@
 				EE5B717D2939FCCE001CB005 /* FirebaseAuth */,
 				EE5B717F2939FCCE001CB005 /* FirebaseFirestore */,
 				EE8B09AF293EAEDC0085F1CB /* FirebaseFirestoreSwift */,
+				EE8B09BD2941B69D0085F1CB /* SwiftSoup */,
+				EE8B09C4294271350085F1CB /* CryptoSwift */,
+				EE8B09C7294272E40085F1CB /* AWSSigner */,
 			);
 			productName = "Golf-Online";
 			productReference = EE5B71302939D9DF001CB005 /* Golf-Online.app */;
@@ -339,6 +417,9 @@
 			mainGroup = EE5B71272939D9DF001CB005;
 			packageReferences = (
 				EE5B717C2939FCCE001CB005 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EE8B09BC2941B69D0085F1CB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				EE8B09C3294271350085F1CB /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				EE8B09C6294272E40085F1CB /* XCRemoteSwiftPackageReference "aws-signer-v4" */,
 			);
 			productRefGroup = EE5B71312939D9DF001CB005 /* Products */;
 			projectDirPath = "";
@@ -357,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5B71742939E749001CB005 /* brush script mt kursiv.ttf in Resources */,
+				EE8B09D8294294F30085F1CB /* data.json in Resources */,
 				EE5B71752939E749001CB005 /* brush-script-mt.png in Resources */,
 				EE5B71822939FD7B001CB005 /* GoogleService-Info.plist in Resources */,
 				EE5B713B2939D9E0001CB005 /* Preview Assets.xcassets in Resources */,
@@ -385,19 +467,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0AE88B2942D08600261281 /* TourView.swift in Sources */,
 				EE998347293EABA000F47783 /* CardView.swift in Sources */,
+				EE0AE8892942CE6900261281 /* Leaderboard.swift in Sources */,
+				EE0AE88F2942D27600261281 /* LeaderboardTournament.swift in Sources */,
+				EE8B09CE294286C40085F1CB /* GolfDataService.swift in Sources */,
+				EE8B09D229428C5E0085F1CB /* WorldRanking.swift in Sources */,
 				EE998340293EAAAB00F47783 /* CardListView.swift in Sources */,
+				EE8B09E62942BE200085F1CB /* Player.swift in Sources */,
 				EE8B09B7293F490C0085F1CB /* HomeView.swift in Sources */,
+				EEF1B0B42942F3E30091F7E6 /* CountryFlagView.swift in Sources */,
+				EE0AE88D2942D16400261281 /* LeaderboardResult.swift in Sources */,
 				EE8B09B5293F48A20085F1CB /* ContentView.swift in Sources */,
 				EE99833C293EA8E100F47783 /* Card.swift in Sources */,
+				EE8B09DE2942B93B0085F1CB /* WorldRankingView.swift in Sources */,
+				EE8B09E02942BB2D0085F1CB /* ServiceHelper.swift in Sources */,
+				EE8B09E42942BDB40085F1CB /* WorldRankingResult.swift in Sources */,
 				EE8B09B3293F23540085F1CB /* AuthenticationService.swift in Sources */,
 				EE99833E293EAA1200F47783 /* CardListView.Model.swift in Sources */,
 				EE99833A293EA7DF00F47783 /* CardRepository.swift in Sources */,
 				EE5B71792939EB07001CB005 /* GlowBorder.swift in Sources */,
 				EE5B71362939D9DF001CB005 /* SignInView.swift in Sources */,
 				EE998342293EAAD100F47783 /* NewCardForm.swift in Sources */,
+				EE8B09DA2942AC730085F1CB /* Tour.swift in Sources */,
 				EE5B71342939D9DF001CB005 /* Golf_OnlineApp.swift in Sources */,
-				EE8B09B9293F49560085F1CB /* MessageView.swift in Sources */,
+				EE0AE8912942D31C00261281 /* LeaderboardPlayer.swift in Sources */,
+				EE8B09E82942C41D0085F1CB /* TourRanking.swift in Sources */,
+				EE8B09B9293F49560085F1CB /* FavoriteView.swift in Sources */,
 				EE998345293EAB4200F47783 /* CardView.Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,6 +825,30 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		EE8B09BC2941B69D0085F1CB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		EE8B09C3294271350085F1CB /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EE8B09C6294272E40085F1CB /* XCRemoteSwiftPackageReference "aws-signer-v4" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adam-fowler/aws-signer-v4.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -746,6 +866,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE5B717C2939FCCE001CB005 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		EE8B09BD2941B69D0085F1CB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE8B09BC2941B69D0085F1CB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		EE8B09C4294271350085F1CB /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE8B09C3294271350085F1CB /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		EE8B09C7294272E40085F1CB /* AWSSigner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE8B09C6294272E40085F1CB /* XCRemoteSwiftPackageReference "aws-signer-v4" */;
+			productName = AWSSigner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
