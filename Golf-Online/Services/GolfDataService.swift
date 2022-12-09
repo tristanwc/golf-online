@@ -24,7 +24,6 @@ class GolfDataService {
     func getScorecard(player_id: Int) -> PGAScorecard {
         // Appends api url with specific service (world rankings, tours, project pga rankings, etc)
         let finalUrl = url + getService(value: .Scorecard) + String(player_id)
-        print(finalUrl)
         let request = NSMutableURLRequest(url: NSURL(string: finalUrl)! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)

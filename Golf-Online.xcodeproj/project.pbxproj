@@ -52,6 +52,7 @@
 		EE998342293EAAD100F47783 /* NewCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998341293EAAD100F47783 /* NewCardForm.swift */; };
 		EE998345293EAB4200F47783 /* CardView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998344293EAB4200F47783 /* CardView.Model.swift */; };
 		EE998347293EABA000F47783 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998346293EABA000F47783 /* CardView.swift */; };
+		EEAF96952943E6AC003CB82C /* ScorePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF96942943E6AC003CB82C /* ScorePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		EE998341293EAAD100F47783 /* NewCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardForm.swift; sourceTree = "<group>"; };
 		EE998344293EAB4200F47783 /* CardView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.Model.swift; sourceTree = "<group>"; };
 		EE998346293EABA000F47783 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EEAF96942943E6AC003CB82C /* ScorePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				EE8B09B4293F48A20085F1CB /* ContentView.swift */,
 				EE071CF729431D9E007FD255 /* PlayerCellView.swift */,
 				EE071CF3294315D2007FD255 /* ScorecardView.swift */,
+				EEAF96942943E6AC003CB82C /* ScorePageView.swift */,
 				EE8B09B1293EB0780085F1CB /* Card */,
 				EE998343293EAB0F00F47783 /* ViewModels */,
 			);
@@ -485,6 +488,7 @@
 				EE8B09B7293F490C0085F1CB /* HomeView.swift in Sources */,
 				EE0AE88D2942D16400261281 /* LeaderboardResult.swift in Sources */,
 				EE071CF4294315D2007FD255 /* ScorecardView.swift in Sources */,
+				EEAF96952943E6AC003CB82C /* ScorePageView.swift in Sources */,
 				EE8B09B5293F48A20085F1CB /* ContentView.swift in Sources */,
 				EE99833C293EA8E100F47783 /* Card.swift in Sources */,
 				EE8B09DE2942B93B0085F1CB /* WorldRankingView.swift in Sources */,

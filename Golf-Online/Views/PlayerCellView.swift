@@ -10,6 +10,7 @@ struct PlayerCellView: View {
             Text("\(player.first_name) \(player.last_name)")
             Spacer()
             Text(getScore(pScore: player.total_to_par))
+                .frame(alignment: .leading)
         }
     }
 }

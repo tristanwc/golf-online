@@ -18,12 +18,14 @@ struct ScorecardData: Codable {
 }
 
 struct CourseData: Codable {
+    var id: Int
     var name: String
     var par_front: Int
     var par_back: Int
     var par_total: Int
 
     enum CodingKeys: CodingKey {
+        case id
         case name
         case par_front
         case par_back

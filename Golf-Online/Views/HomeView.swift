@@ -12,7 +12,7 @@ struct HomeView: View {
                     .font(.title)
                 List {
                     ForEach(players, id: \.player_id) { player in
-                        NavigationLink(destination: ScorecardView(player: player), label: {
+                        NavigationLink(destination: ScorePageView(player: player), label: {
                             PlayerCellView(player: player)
                         })
                     }
