@@ -2,7 +2,7 @@ import Combine
 import Foundation
 
 extension CardView {
-    final class Model: ObservableObject, Identifiable {
+    final class CardModel: ObservableObject, Identifiable {
         private let cardRepository: CardRepository
         @Published var card: Card
         private var cancellables: Set<AnyCancellable> = []

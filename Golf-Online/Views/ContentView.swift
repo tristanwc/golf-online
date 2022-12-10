@@ -15,15 +15,16 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            WorldRankingView()
+            RankingView()
                 .tabItem {
-                    Image(systemName: "chart.bar.fill")
-                    Text("World Ranking")
+                    Image(systemName: "trophy.fill")
+                    Text("Rankings")
                 }
-            FavoriteView()
+
+            FixtureListView()
                 .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Favorites")
+                    Image(systemName: "trophy.fill")
+                    Text("Fixtures")
                 }
             CardListView()
                 .tabItem {

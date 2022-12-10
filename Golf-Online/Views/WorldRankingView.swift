@@ -7,10 +7,25 @@ struct WorldRankingView: View {
     private var viewModel = ViewModel()
     var body: some View {
         VStack {
+            Text("World Ranking")
+                .font(.title)
             NavigationView {
                 List {
+                    HStack {
+                        Text("POS")
+                            .frame(width: 50, alignment: .leading)
+                        Text("PLAYER")
+                        Spacer()
+                        Text("PTS")
+                    }
                     ForEach(players, id: \.player_id) { golfer in
-                        Text("\(golfer.player_name), \(golfer.position)")
+                        HStack {
+                            Text("\(golfer.position)")
+                                .frame(width: 50, alignment: .leading)
+                            Text("\(golfer.player_name)")
+                            Spacer()
+                            Text("\(golfer.total_points)")
+                        }
                     }
                 }
             }

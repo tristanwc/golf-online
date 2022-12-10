@@ -10,7 +10,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var model: Model
+    var model: CardModel
     @State var showContent = false
     @State var deleting = false
     @State var showAlert = false

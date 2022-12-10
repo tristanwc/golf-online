@@ -5,7 +5,7 @@ import Firebase
 
 extension CardListView {
     final class Model: ObservableObject {
-        @Published var cardViewModels: [CardView.Model] = []
+        @Published var cardViewModels: [CardView.CardModel] = []
         @Published var cardRepository: CardRepository
     
         let authenticationService = AuthenticationService()
@@ -21,7 +21,7 @@ extension CardListView {
       
             cardRepository.$cards.map { cards in
                 cards.map { card in
-                    CardView.Model(card: card, repository: self.cardRepository)
+                    CardView.CardModel(card: card, repository: self.cardRepository)
                 }
             }
             .assign(to: &$cardViewModels)
