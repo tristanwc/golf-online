@@ -21,7 +21,7 @@ struct ScorePageView: View {
                 ForEach(0 ..< totalRounds, id: \.self) { index in
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Round \(index + 1)")
-                            .font(.title3).frame(alignment: .leading)
+                            .font(.title3).frame(alignment: .leading).fontWeight(.bold)
                         ScorecardView(viewModel: getScorecardViewModel(index: index))
                         Divider()
                     }

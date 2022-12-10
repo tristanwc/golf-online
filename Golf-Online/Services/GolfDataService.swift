@@ -11,7 +11,7 @@ enum Service {
 
 class GolfDataService {
     let headers = [
-        "X-RapidAPI-Key": "6dde87c2d3msh72cb3a85e7670cep1a47dcjsn1d90d699dffd",
+        "X-RapidAPI-Key": "7456191bf0msh390f009521c6abfp1ddd3fjsn1ed7f70527b7",
         "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com"
     ]
 
@@ -161,6 +161,7 @@ class GolfDataService {
     func getLeaderboard(tournament_id: Int) -> Leaderboard {
         // Appends api url with specific service (world rankings, tours, project pga rankings, etc)
         let finalUrl = "\(url)\(getService(value: .Leaderboard))\(tournament_id)"
+        print(finalUrl)
         let request = NSMutableURLRequest(url: NSURL(string: finalUrl)! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
