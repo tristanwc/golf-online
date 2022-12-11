@@ -10,7 +10,7 @@ struct FixtureListView: View {
             VStack {
                 List {
                     ForEach(viewModel.tournaments, id: \.id) { tournament in
-                        HStack() {
+                        HStack {
                             VStack(alignment: .leading) {
                                 Text("\(tournament.name)")
                                     .font(.headline)
@@ -21,7 +21,7 @@ struct FixtureListView: View {
                             }
                             Spacer()
                             Image(systemName: "arrow.right")
-                                .font(.title)
+                                .font(.title).frame(alignment: .trailing)
                         }
                         .onTapGesture {
                             self.tournament_id = tournament.id

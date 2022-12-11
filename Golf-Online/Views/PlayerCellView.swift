@@ -4,7 +4,7 @@ struct PlayerCellView: View {
     var player: LeaderboardPlayer
     var body: some View {
         HStack {
-            Text("\(player.position)").frame(width: 25)
+            Text("\(player.position)").frame(width: 35)
                 .frame(alignment: .leading)
             Text("\(countryFlag(from: player.country))")
             Text("\(player.first_name) \(player.last_name)")

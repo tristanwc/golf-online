@@ -20,10 +20,10 @@ struct ContentView: View {
                     Image(systemName: "trophy.fill")
                     Text("Rankings")
                 }
-            CardListView()
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "menucard.fill")
-                    Text("Cards")
+                    Image(systemName: "gearshape")
+                    Text("Settings")
                 }
         }
     }

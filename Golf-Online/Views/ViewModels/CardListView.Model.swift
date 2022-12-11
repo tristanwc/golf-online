@@ -3,7 +3,7 @@ import Foundation
 import Combine
 import Firebase
 
-extension CardListView {
+extension SettingsView {
     final class Model: ObservableObject {
         @Published var cardViewModels: [CardView.CardModel] = []
         @Published var cardRepository: CardRepository

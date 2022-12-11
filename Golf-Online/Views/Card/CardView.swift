@@ -114,7 +114,7 @@ struct CardView: View {
                         .background(Color.green)
                         .font(.title)
                         .foregroundColor(.white)
-                        .clipShape(Circle())
+                        //.clipShape(Circle())
                 }
                 Button {
                     markSuccess(false)
@@ -125,7 +125,7 @@ struct CardView: View {
                         .background(Color.red)
                         .font(.title)
                         .foregroundColor(.white)
-                        .clipShape(Circle())
+                        //.clipShape(Circle())
                 }
             }
             .padding()

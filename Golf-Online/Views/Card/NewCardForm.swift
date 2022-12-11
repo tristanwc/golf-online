@@ -4,7 +4,7 @@ struct NewCardForm: View {
     @State var question: String = ""
     @State var answer: String = ""
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var cardListViewModel: CardListView.Model
+    @ObservedObject var cardListViewModel: SettingsView.Model
 
     var body: some View {
         VStack(alignment: .center, spacing: 30) {
@@ -40,6 +40,6 @@ struct NewCardForm: View {
 
 struct NewCardForm_Previews: PreviewProvider {
     static var previews: some View {
-        NewCardForm(cardListViewModel: CardListView.Model())
+        NewCardForm(cardListViewModel: SettingsView.Model())
     }
 }

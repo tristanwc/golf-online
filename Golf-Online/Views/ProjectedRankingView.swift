@@ -12,8 +12,10 @@ struct ProjectedRankingView: View {
             NavigationView {
                 List {
                     HStack {
+                        Text("POS")
+                            .frame(width: 50, alignment: .leading)
                         Text("P.POS")
-                            .frame(width: 45, alignment: .leading)
+                            .frame(width: 50, alignment: .leading)
                         Text("PLAYER")
                         Spacer()
                         Text("P.PTS")
@@ -21,8 +23,10 @@ struct ProjectedRankingView: View {
                     }
                     ForEach(players, id: \.player_id) { golfer in
                         HStack {
+                            Text("\(golfer.current_rank)")
+                                .frame(width: 50, alignment: .leading)
                             Text("\(golfer.projected_rank)")
-                                .frame(width: 40, alignment: .leading)
+                                .frame(width: 50, alignment: .leading)
                             Text("\(golfer.first_name) \(getCondensedLastName(lastName: golfer.last_name)).")
                             Spacer()
                             Text("\(golfer.projected_points)")

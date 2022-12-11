@@ -1,27 +1,25 @@
 import Firebase
 import SwiftUI
 
-struct CardListView: View {
+struct SettingsView: View {
     @ObservedObject var model = Model()
-
     @State var showForm = false
     @State var showSignInView = false
-
+    @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                ScrollView(.vertical) {
+                List {
                     VStack {
-                        ForEach(model.cardViewModels) { cardViewModel in
-                            CardView(model: cardViewModel)
-                                .padding([.vertical])
+                        HStack {
+                            Text("Dark Mode Toggle")
+                            ModeSwitchView()
                         }
                     }
-                    .frame(width: geometry.size.width)
                 }
             }
             .sheet(isPresented: $showForm) {
-                NewCardForm(cardListViewModel: model)
+                ModeSwitchView()
             }
             .fullScreenCover(isPresented: $showSignInView) {
                 SignInView(cardListViewModel: model)
@@ -32,10 +30,10 @@ struct CardListView: View {
             .onChange(of: model.user) { user in
                 showSignInView = user == nil ? true : false
             }
-            .navigationTitle("Cloud Cards")
+            .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(
-                leading:
+                trailing:
                 Menu {
                     if let email = model.user?.email {
                         Text(email)
@@ -45,20 +43,16 @@ struct CardListView: View {
                     label: {
                     Image(systemName: "person.fill")
                         .font(.title)
-                },
-                trailing:
-                Button { showForm.toggle() }
-                label: {
-                        Image(systemName: "plus")
-                            .font(.title)
-                    }
+                }
             )
         }
+        .preferredColorScheme(isDarkMode ? .dark : .light)
+        .accentColor(.primary)
     }
 }
 
 struct CardListView_Previews: PreviewProvider {
     static var previews: some View {
-        CardListView()
+        SettingsView()
     }
 }

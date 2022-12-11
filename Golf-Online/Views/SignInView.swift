@@ -8,7 +8,7 @@ struct SignInView: View {
     @State var showAlert = false
     @State var errorDescription: String?
 
-    @ObservedObject var cardListViewModel: CardListView.Model
+    @ObservedObject var cardListViewModel: SettingsView.Model
 
     private func showError(error: Error) {
         errorDescription = error.localizedDescription
@@ -60,7 +60,7 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView(cardListViewModel: CardListView.Model())
+        SignInView(cardListViewModel: SettingsView.Model())
     }
 }
 

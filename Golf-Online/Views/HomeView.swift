@@ -15,6 +15,14 @@ struct HomeView: View {
             VStack {
                 Text("\(leaderboard?.results?.tournament.course ?? "ERROR_COURSE_NAME")").font(.subheadline)
                 List {
+                    HStack {
+                        Text("POS").frame(width: 35)
+                            .frame(alignment: .leading)
+                        Text("PLAYER").padding([.leading])
+                        Spacer()
+                        Text("SCORE")
+                            .frame(alignment: .trailing)
+                    }
                     ForEach(players, id: \.player_id) { player in
                         NavigationLink(destination: ScorePageView(tournament_id: tournament_id, player: player), label: {
                             PlayerCellView(player: player)

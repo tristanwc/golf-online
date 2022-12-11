@@ -47,7 +47,7 @@
 		EE99833A293EA7DF00F47783 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998339293EA7DF00F47783 /* CardRepository.swift */; };
 		EE99833C293EA8E100F47783 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833B293EA8E100F47783 /* Card.swift */; };
 		EE99833E293EAA1200F47783 /* CardListView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833D293EAA1200F47783 /* CardListView.Model.swift */; };
-		EE998340293EAAAB00F47783 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833F293EAAAB00F47783 /* CardListView.swift */; };
+		EE998340293EAAAB00F47783 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99833F293EAAAB00F47783 /* SettingsView.swift */; };
 		EE998342293EAAD100F47783 /* NewCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998341293EAAD100F47783 /* NewCardForm.swift */; };
 		EE998345293EAB4200F47783 /* CardView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998344293EAB4200F47783 /* CardView.Model.swift */; };
 		EE998347293EABA000F47783 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE998346293EABA000F47783 /* CardView.swift */; };
@@ -56,6 +56,7 @@
 		EEBFCD992944349A00AB34C6 /* ProjectedRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFCD982944349A00AB34C6 /* ProjectedRanking.swift */; };
 		EEBFCD9B2944378B00AB34C6 /* ProjectedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFCD9A2944378B00AB34C6 /* ProjectedRankingView.swift */; };
 		EEBFCD9D2944844900AB34C6 /* FixtureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFCD9C2944844900AB34C6 /* FixtureView.swift */; };
+		EEBFCD9F2945538E00AB34C6 /* ModeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFCD9E2945538E00AB34C6 /* ModeSwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +115,7 @@
 		EE998339293EA7DF00F47783 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		EE99833B293EA8E100F47783 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EE99833D293EAA1200F47783 /* CardListView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.Model.swift; sourceTree = "<group>"; };
-		EE99833F293EAAAB00F47783 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		EE99833F293EAAAB00F47783 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EE998341293EAAD100F47783 /* NewCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardForm.swift; sourceTree = "<group>"; };
 		EE998344293EAB4200F47783 /* CardView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.Model.swift; sourceTree = "<group>"; };
 		EE998346293EABA000F47783 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		EEBFCD982944349A00AB34C6 /* ProjectedRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectedRanking.swift; sourceTree = "<group>"; };
 		EEBFCD9A2944378B00AB34C6 /* ProjectedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectedRankingView.swift; sourceTree = "<group>"; };
 		EEBFCD9C2944844900AB34C6 /* FixtureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureView.swift; sourceTree = "<group>"; };
+		EEBFCD9E2945538E00AB34C6 /* ModeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSwitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				EE998341293EAAD100F47783 /* NewCardForm.swift */,
-				EE99833F293EAAAB00F47783 /* CardListView.swift */,
 				EE998346293EABA000F47783 /* CardView.swift */,
 			);
 			path = Card;
@@ -280,6 +281,8 @@
 				EE071CF729431D9E007FD255 /* PlayerCellView.swift */,
 				EE071CF3294315D2007FD255 /* ScorecardView.swift */,
 				EEAF96942943E6AC003CB82C /* ScorePageView.swift */,
+				EEBFCD9E2945538E00AB34C6 /* ModeSwitchView.swift */,
+				EE99833F293EAAAB00F47783 /* SettingsView.swift */,
 				EE8B09B1293EB0780085F1CB /* Card */,
 				EE998343293EAB0F00F47783 /* ViewModels */,
 			);
@@ -496,13 +499,14 @@
 				EE0AE88B2942D08600261281 /* RankingView.swift in Sources */,
 				EEBFCD9B2944378B00AB34C6 /* ProjectedRankingView.swift in Sources */,
 				EEBFCD9D2944844900AB34C6 /* FixtureView.swift in Sources */,
+				EEBFCD9F2945538E00AB34C6 /* ModeSwitchView.swift in Sources */,
 				EE998347293EABA000F47783 /* CardView.swift in Sources */,
 				EE0AE8892942CE6900261281 /* Leaderboard.swift in Sources */,
 				EE0AE88F2942D27600261281 /* LeaderboardTournament.swift in Sources */,
 				EE071CF6294315EF007FD255 /* Score.swift in Sources */,
 				EE8B09CE294286C40085F1CB /* GolfDataService.swift in Sources */,
 				EE8B09D229428C5E0085F1CB /* WorldRanking.swift in Sources */,
-				EE998340293EAAAB00F47783 /* CardListView.swift in Sources */,
+				EE998340293EAAAB00F47783 /* SettingsView.swift in Sources */,
 				EE8B09E62942BE200085F1CB /* Player.swift in Sources */,
 				EEBFCD9729442F5B00AB34C6 /* Fixture.swift in Sources */,
 				EE8B09B7293F490C0085F1CB /* HomeView.swift in Sources */,

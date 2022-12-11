@@ -57,10 +57,12 @@ struct ScorecardView: View {
                 Text("Score").frame(width: 50, alignment: .leading)
                 ForEach(viewModel.getNineHoleScores(whichNine: .front), id: \.hole_number) { score in
                     ZStack {
-                        Rectangle().opacity(0.1)
-                        Text(score.score)
+//                        if getInt(val: score.score) < getInt(val: (viewModel.holeDetails?[getInt(val:score.hole_number) - 1].par)!) {
+                            Rectangle().opacity(0.1)
+                            Text(score.score)
                     }
                     .frame(width: 25, height: 20)
+                    
                 }
                 ZStack {
                     Rectangle().opacity(0.1)
@@ -137,7 +139,16 @@ struct ScorecardView: View {
             }
         }
     }
+    
+    func getInt(val: String) -> Int {
+        if let int = Int(val) {
+            return int
+        }
+        return 0
+    }
+
 }
+
 
 extension ScorecardView {
     struct ViewModel {
